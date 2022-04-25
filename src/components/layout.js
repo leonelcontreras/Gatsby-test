@@ -24,8 +24,6 @@ export default function Layout ({
     }  
   `)
 
-  console.log('title ---', title)
-
   const defaults = data?.site?.siteMetadata
 
   return (

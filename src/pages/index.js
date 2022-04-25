@@ -33,8 +33,6 @@ export default function IndexPage() {
     }
   `)
 
-  console.log('posts -->', posts)
-
   return (
     <Layout>
       <div className={imageWrapper}>

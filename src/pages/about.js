@@ -13,7 +13,6 @@ export const query = graphql`
   }
 `
 export default function AboutPage({ data }) {
-  console.log('data --', data)
   return (
     <Layout
       title='About page'
