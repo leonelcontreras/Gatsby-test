@@ -1,0 +1,27 @@
+---
+date: 2021-08-11
+title: Other post
+description: 'This is other post blog MDX'
+---
+
+import { graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+
+export const query = graphql`
+  query getImageFile {
+    file(name: {eq: "cocktail"}) {
+      childImageSharp {
+        gatsbyImageData(placeholder: DOMINANT_COLOR)
+      }
+    }
+  }
+`
+
+# Other post
+
+<GatsbyImage
+  image={getImage(props.data.file)}
+  alt='A beuty image'
+/>
+
+This other post
